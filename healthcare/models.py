@@ -10,3 +10,5 @@ class Doctor(models.Model):
     twitter_link = models.URLField(blank=True, null=True)
     linkedin_link = models.URLField(blank=True, null=True)
     instagram_link = models.URLField(blank=True, null=True)
+    def __str__(self) -> str:
+        return self.name
