@@ -248,12 +248,13 @@
               </h2>
           </div>
           <div class="carousel-wrap ">
+            
               <div class="owl-carousel team_carousel">
                   {% for doctor in doctors %}
                   <div class="item">
                       <div class="box">
-                          <div class="img-box">
-                              <img src="{% static doctor.profile_image.url %}" alt="{{ doctor.name }}" />
+                          <div class="img-box"> 
+                            <img src="{{ doctor.profile_image.url }}" alt="{{ doctor.name }}" />
                           </div>
                           <div class="detail-box">
                               <h5>
@@ -290,6 +291,7 @@
                   {% endfor %}
               </div>
           </div>
+          
       </div>
   </section>
 

@@ -25,6 +25,8 @@ STATIC_URL = Path("static/")
 STATIC_ROOT = BASE_DIR / Path("static/")
 
 STATICFILES_DIRS = [BASE_DIR /Path("config/static/")]
+
+
 # I added
 
 
