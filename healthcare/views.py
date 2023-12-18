@@ -13,6 +13,6 @@ def home (request):
         return HttpResponse("Error loading template")
 
     return HttpResponse(template.render())
-def doctors_list(request):
+def doctors(request):
     doctors = Doctor.objects.all()
     return render(request, "healthcare/doctor.html", {"doctors": doctors})
