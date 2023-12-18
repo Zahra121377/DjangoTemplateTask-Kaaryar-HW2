@@ -13,6 +13,14 @@ def home (request):
         return HttpResponse("Error loading template")
 
     return HttpResponse(template.render())
+def about(request):
+    try:
+        template = loader.get_template('healthcare/about.html')
+    except Exception as e:
+        print(f"Error loading template: {e}")
+        return HttpResponse("Error loading template")
+
+    return HttpResponse(template.render())
 def doctors(request):
     doctors = Doctor.objects.all()
     return render(request, "healthcare/doctor.html", {"doctors": doctors})
