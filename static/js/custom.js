@@ -2,7 +2,7 @@
 function getYear() {
     var currentDate = new Date();
     var currentYear = currentDate.getFullYear();
-    document.querySelector("#displayYear").innerHTML = currentYear;
+    document.querySelector('#displayYear').innerHTML = currentYear;
 }
 
 getYear();
@@ -14,10 +14,12 @@ $(document).ready(function () {
 
 // date picker
 $(function () {
-    $("#inputDate").datepicker({
-        autoclose: true,
-        todayHighlight: true
-    }).datepicker('update', new Date());
+    $('#inputDate')
+        .datepicker({
+            autoclose: true,
+            todayHighlight: true,
+        })
+        .datepicker('update', new Date());
 });
 
 // owl carousel slider js
@@ -28,19 +30,19 @@ $('.team_carousel').owlCarousel({
     autoplay: true,
     navText: [
         '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-        '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+        '<i class="fa fa-angle-right" aria-hidden="true"></i>',
     ],
     autoplayHoverPause: true,
     responsive: {
         0: {
             items: 1,
-            margin: 0
+            margin: 0,
         },
         576: {
             items: 2,
         },
         992: {
-            items: 3
-        }
-    }
-})
+            items: 3,
+        },
+    },
+});

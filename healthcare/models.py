@@ -6,7 +6,7 @@ class Doctor(models.Model):
     name = models.CharField(max_length=50)
     specialization = models.CharField(max_length=100)
     # # profile_image = models.ImageField(upload_to="images/doctor_profile_images/", blank=True, null=True)
-    image_filename = models.CharField(max_length=255,default = "d2.png")
+    image_filename = models.CharField(max_length=255, default="d2.png")
     facebook_link = models.URLField(blank=True, null=True)
     twitter_link = models.URLField(blank=True, null=True)
     linkedin_link = models.URLField(blank=True, null=True)
